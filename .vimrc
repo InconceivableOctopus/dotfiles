@@ -77,7 +77,7 @@ set ignorecase
 " case-sensitive search if mixed-case search is used
 set smartcase
 
-" enable mouse support
+" enable mouse support in visual mode
 set mouse=a
 
 " ----------------------------------------------------------------------
@@ -125,10 +125,13 @@ map <leader>R :RV<cr>
 " Trigger configuration. Do not use <tab> if you use
 " https://github.com/Valloric/YouCompleteMe.
 let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
+
+" ctrl-p
+" disable default fuzzy-find file count limmit
 let ctrlp_max_files=0
-" Ignore stuff for ctrl p
+" ignore files and folders
 set wildignore+=*/tmp/*,*/node_modules/*,*.so,*.swp,*.zip,.git/*     " MacOSX/Linux
 let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(DS_Store|swp|ico|git|svn))$'
