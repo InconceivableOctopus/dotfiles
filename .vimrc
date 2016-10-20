@@ -80,6 +80,9 @@ set smartcase
 " enable mouse support in visual mode
 set mouse=a
 
+" share between vim and system clipboards
+set clipboard=unnamed
+
 " ----------------------------------------------------------------------
 "                           Key Mapping
 
