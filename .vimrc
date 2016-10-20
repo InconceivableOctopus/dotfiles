@@ -30,7 +30,7 @@ Plugin 'kchmck/vim-coffee-script'         " coffeescript support for vim
 " --------------------
 Plugin 'tpope/vim-fugitive'               " git plugin
 " --------------------
-Plugin 'ctrlpvim/ctrlp.vim'               " git plugin
+Plugin 'ctrlpvim/ctrlp.vim'               " fuzzy search plugin
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required by Vundle
