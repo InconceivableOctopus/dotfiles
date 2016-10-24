@@ -95,17 +95,18 @@ map <leader>W :wa<cr>
 " quicker quit
 map <leader>q :q<cr>
 map <leader>Q :qa<cr>
-" quicker save-quit
+" quicker save + quit
 map <leader>x :x<cr>
 map <leader>X :xa<cr>
 
-" format whole file with ==
+" format whole file with `==`
 map == mzgg=G`z
 
 " ----------------------------------------------------------------------
 "                     Plugin-Specific Key Mapping
 
 " nerdtree
+" shortcut to toggle nerdtree
 map <leader>n :NERDTreeToggle<cr>
 
 " vim-rspec
