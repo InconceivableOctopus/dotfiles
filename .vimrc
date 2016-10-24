@@ -108,6 +108,12 @@ map <leader>X :xa<cr>
 " format whole file with `==`
 map == mzgg=G`z
 
+" quicker window movement
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
+
 " ----------------------------------------------------------------------
 "                     Plugin-Specific Key Mapping
 
