@@ -71,9 +71,6 @@ set shiftwidth=2    " automatic indent column count
 set softtabstop=2   " tab column count
 set expandtab       " use spaces instead of tabs
 
-" highlight matches when searching
-set hlsearch
-
 " case-insensitive search
 set ignorecase
 
