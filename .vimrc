@@ -36,10 +36,13 @@ Plugin 'ctrlpvim/ctrlp.vim'               " fuzzy search plugin
 call vundle#end()            " required by Vundle
 filetype plugin indent on    " required by Vundle
 
-runtime macros/matchit.vim  " required by 'vim-textobj-rubyblock'
-
-" Add all non-plugin stuff after this line
+" Add all non-plugin stuff after this
+"
 " ----------------------------------------------------------------------
+"                         Configuration
+
+" required by 'vim-textobj-rubyblock'
+runtime macros/matchit.vim
 
 " syntax highlighling
 syntax on
@@ -134,7 +137,6 @@ map <leader>R :RV<cr>
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
-
 
 " ctrl-p
 " disable default fuzzy-find file count limmit
