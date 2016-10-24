@@ -92,8 +92,8 @@ set wildmenu
 " ----------------------------------------------------------------------
 "                           Key Mapping
 
-" remap leader to ,
-let mapleader = ','
+" remap leader to space
+let mapleader = ' '
 
 " quicker save
 map <leader>w :w<cr>
