@@ -90,6 +90,16 @@ set clipboard=unnamed
 set wildmenu
 
 " ----------------------------------------------------------------------
+"                     Plugin-Specific Configuration
+
+" ctrl-p
+" disable default fuzzy-find file count limmit
+let ctrlp_max_files=0
+" ignore files and folders
+set wildignore+=*/tmp/*,*/node_modules/*,*.so,*.swp,*.zip,.git/*     " MacOSX/Linux
+let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(DS_Store|swp|ico|git|svn))$'
+
+" ----------------------------------------------------------------------
 "                           Key Mapping
 
 " remap leader to space
@@ -143,10 +153,3 @@ map <leader>R :RV<cr>
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
-
-" ctrl-p
-" disable default fuzzy-find file count limmit
-let ctrlp_max_files=0
-" ignore files and folders
-set wildignore+=*/tmp/*,*/node_modules/*,*.so,*.swp,*.zip,.git/*     " MacOSX/Linux
-let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(DS_Store|swp|ico|git|svn))$'
