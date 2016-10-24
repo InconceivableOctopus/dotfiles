@@ -2,7 +2,7 @@ set nocompatible              " be iMproved, required for Vundle
 filetype off                  " required by Vundle
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
+set runtimepath+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'             " let Vundle manage Vundle, required by Vundle
@@ -48,10 +48,10 @@ runtime macros/matchit.vim
 syntax on
 
 " show relative line numbers
-set rnu
+set relativenumber
 
 " show line numbers
-set nu
+set number
 
 " disable line wrapping
 set nowrap
