@@ -83,6 +83,9 @@ set mouse=a
 " share between vim and system clipboards
 set clipboard=unnamed
 
+" show array of possibilities for command line completion
+set wildmenu
+
 " ----------------------------------------------------------------------
 "                           Key Mapping
 
