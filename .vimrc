@@ -86,6 +86,12 @@ set clipboard=unnamed
 " show array of possibilities for command line completion
 set wildmenu
 
+" open vertical split on the right
+set splitright
+
+" open horizontal split on the bottom
+set splitbelow
+
 " ----------------------------------------------------------------------
 "                     Plugin-Specific Configuration
 
