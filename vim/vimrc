@@ -127,6 +127,15 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
+" quicker file navigation
+map <leader>d :vsplit %:p:h<cr> " open
+
+" quicker tab movement
+map <leader>t :tabnew<cr>
+map <leader>T :tab split<cr>
+map <C-n> :tabn<cr>
+map <C-b> :tabp<cr>
+
 " ----------------------------------------------------------------------
 "                     Plugin-Specific Key Mapping
 
