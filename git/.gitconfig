@@ -1,0 +1,5 @@
+[alias]
+  refresh=!git fetch origin && git rebase origin/master
+  springclean=!git branch | grep --extended-regexp --invert-match \"\\*|master\" | xargs git branch --delete --force
+[core]
+  excludesfile=~/.gitignore
