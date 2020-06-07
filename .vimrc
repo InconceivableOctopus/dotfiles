@@ -31,6 +31,10 @@ Plugin 'kchmck/vim-coffee-script'         " coffeescript support for vim
 Plugin 'tpope/vim-fugitive'               " git plugin
 " --------------------
 Plugin 'ctrlpvim/ctrlp.vim'               " fuzzy search plugin
+" --------------------
+Plugin 'tpope/vim-liquid'                 " liquid language sypport for jekyll development support
+" --------------------
+Plugin 'tpope/vim-markdown'               " markdown syntax suport
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required by Vundle
@@ -128,7 +132,8 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
 " quicker file navigation
-map <leader>d :vsplit %:p:h<cr> " open
+map <leader>d :e %:p:h<cr>
+map <leader>D :vsplit %:p:h<cr>
 
 " quicker tab movement
 map <leader>t :tabnew<cr>
