@@ -1,3 +1,9 @@
+" ----------------------------------------------------------------------
+"                         Plugins
+
+" -----------------------------------
+"     Plugin Manager
+
 set nocompatible              " be iMproved, required for Vundle
 filetype off                  " required by Vundle
 
@@ -6,42 +12,46 @@ set runtimepath+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'             " let Vundle manage Vundle, required by Vundle
-" --------------------
+
+" -----------------------------------
+"     Interface and Navigation
+
 Plugin 'vim-airline/vim-airline'          " status bar
-" --------------------
-Plugin 'ntpeters/vim-better-whitespace'   " whitespace visualisation changes
-" --------------------
+
 Plugin 'scrooloose/nerdtree'              " file tree
-" --------------------
-Plugin 'sirver/ultisnips'                 " snippet engine, requires python & vim >= 7.4
-Plugin 'honza/vim-snippets'               " pre-made snippet\, separate from snippet engine
-" --------------------
-Plugin 'kana/vim-textobj-user'            " allows craeting on new text-objects
-Plugin 'nelstrom/vim-textobj-rubyblock'   " ruby text objects added to grammar
-" --------------------
-Plugin 'tpope/vim-rails'                  " rails productivity commands from inside vim
-" --------------------
-Plugin 'thoughtbot/vim-rspec'             " shortcuts for running specs
-" --------------------
-Plugin 'pangloss/vim-javascript'          " js syntax highlightlig, required by vim-jsx
-Plugin 'mxw/vim-jsx'                      " jsx syntax highlighting
-" --------------------
-Plugin 'kchmck/vim-coffee-script'         " coffeescript support for vim
-" --------------------
-Plugin 'tpope/vim-fugitive'               " git plugin
-" --------------------
+
 Plugin 'ctrlpvim/ctrlp.vim'               " fuzzy search plugin
-" --------------------
-Plugin 'tpope/vim-liquid'                 " liquid language sypport for jekyll development support
-" --------------------
+
+Plugin 'ntpeters/vim-better-whitespace'   " whitespace visualisation changes
+
+" -----------------------------------
+"     Version Control
+
+Plugin 'tpope/vim-fugitive'               " git plugin
+
+" -----------------------------------
+"     Language Support
+
+" javascript
+Plugin 'mxw/vim-jsx'                      " jsx syntax highlighting
+
+" coffeescript
+Plugin 'kchmck/vim-coffee-script'         " coffeescript support for vim
+
+" markdown
 Plugin 'tpope/vim-markdown'               " markdown syntax suport
+
+" liquid (jekyll)
+Plugin 'tpope/vim-liquid'                 " liquid language sypport for jekyll development support
+
+" ruby
+Plugin 'kana/vim-textobj-user'            " allows creating on new text-objects
+Plugin 'nelstrom/vim-textobj-rubyblock'   " ruby text objects added to grammar
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required by Vundle
 filetype plugin indent on    " required by Vundle
 
-" Add all non-plugin stuff after this
-"
 " ----------------------------------------------------------------------
 "                         Configuration
 
@@ -115,15 +125,14 @@ let mapleader = ' '
 " quicker save
 map <leader>w :w<cr>
 map <leader>W :wa<cr>
+
 " quicker quit
 map <leader>q :q<cr>
 map <leader>Q :qa<cr>
+
 " quicker save + quit
 map <leader>x :x<cr>
 map <leader>X :xa<cr>
-
-" format whole file with `==`
-map == mzgg=G`z
 
 " quicker window movement
 nnoremap <C-j> <C-w>j
@@ -141,32 +150,11 @@ map <leader>T :tab split<cr>
 map <C-n> :tabn<cr>
 map <C-b> :tabp<cr>
 
+" format whole file with `==`
+map == mzgg=G`z
+
 " ----------------------------------------------------------------------
 "                     Plugin-Specific Key Mapping
 
 " nerdtree
-" shortcut to toggle nerdtree
-map <leader>n :NERDTreeToggle<cr>
-
-" vim-rspec
-map <leader>S :call RunCurrentSpecFile()<cr>
-map <leader>s :call RunNearestSpec()<cr>
-map <leader>l :call RunLastSpec()<cr>
-" map <leader>S :call RunAllSpecs()<cr>     " don't see any use in this at the moment
-
-" vim-rails
-" jump to Alternate file
-map <leader>a :A<cr>
-" open Alternate file in vsplit
-map <leader>A :AV<cr>
-" jump to Related file
-map <leader>r :R<cr>
-" open Related file in vsplit
-map <leader>R :RV<cr>
-
-" ultisnips
-" Trigger configuration. Do not use <tab> if you use
-" https://github.com/Valloric/YouCompleteMe.
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<tab>"
-let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+map <leader>n :NERDTreeToggle<cr>           " shortcut to toggle nerdtree
